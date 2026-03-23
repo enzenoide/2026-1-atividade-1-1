@@ -25,7 +25,7 @@ Definição do ambiente operacional via arquivo de configuração.
 * **Execução com Volume Mapeado:** O container foi iniciado em modo interativo com o shell `fish`, mapeando a porta 8000 e criando um volume para sincronizar os arquivos em tempo real:
   `docker run -it --rm -p 8000:8000 -v "$(pwd):/app" atividade-django-dev fish`
 
-> **[INSERIR SCREENSHOT 1: Terminal com o comando de build ou container rodando]**
+> **![](imagens/terminal.png)**
 
 ### 3. Criar e Configurar a Aplicação Django
 Com o terminal do container ativo, as tarefas de desenvolvimento foram realizadas:
@@ -37,14 +37,14 @@ Com o terminal do container ativo, as tarefas de desenvolvimento foram realizada
 * **Desenvolvimento da View:** Edição do arquivo `webapp/views.py` para exibir a mensagem: *"Olá Professor! Sou seu aluno Henze Fernandes Pinto em SO!"*.
 * **Configuração de URLs:** Mapeamento das rotas tanto no arquivo do app quanto no do projeto principal.
 
-> **[INSERIR SCREENSHOT 2: Código da View ou do arquivo settings.py]**
+> **![](imagens/terminal2.png)**
 
 ### 4. Executar e Acessar a Aplicação
 * **Inicialização do Servidor:** Executado o comando `python3 manage.py runserver 0.0.0.0:8000`.
 * **Testes no Navegador:** * Acesso à home: `http://localhost:8000`
     * Acesso ao Admin: `http://localhost:8000/admin`
 
-> **[INSERIR SCREENSHOT 3: Navegador exibindo a página com seu nome e o painel Admin]**
+> **![](imagens/admim.png) ![](imagens/home.png)**
 
 ---
 
@@ -55,8 +55,3 @@ O maior aprendizado foi entender a dinâmica de **volumes mapeados**. Perceber q
 
 ### Dificuldades
 A principal dificuldade foi garantir que o comando do Docker Build encontrasse o arquivo de requisitos corretamente e a configuração do `ALLOWED_HOSTS`, que é um erro comum quando se sobe uma aplicação Django em ambientes virtualizados ou containers pela primeira vez.
-
-### Sugestões
-Uma sugestão para melhorar o fluxo seria a utilização do **Docker Compose**, que simplifica a execução de comandos longos com muitos parâmetros de volume e porta em um único arquivo `.yml`.
-
----
