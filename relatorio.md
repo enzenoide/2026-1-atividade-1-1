@@ -45,6 +45,7 @@ Com o terminal do container ativo, as tarefas de desenvolvimento foram realizada
     * Acesso ao Admin: `http://localhost:8000/admin`
 
 > **![](imagens/admim.png)**
+
 > **![](imagens/home.png)**
 ---
 
