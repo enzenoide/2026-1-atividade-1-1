@@ -55,4 +55,4 @@ Com o terminal do container ativo, as tarefas de desenvolvimento foram realizada
 O maior aprendizado foi entender a dinâmica de **volumes mapeados**. Perceber que eu posso editar o código no meu VS Code (hospedeiro) e ver o resultado imediato dentro de um container rodando Fedora foi muito interessante. Além disso, a prática reforçou os conceitos de isolamento de processos e redes em sistemas operacionais modernos.
 
 ### Dificuldades
-A principal dificuldade foi garantir que o comando do Docker Build encontrasse o arquivo de requisitos corretamente e a configuração do `ALLOWED_HOSTS`, que é um erro comum quando se sobe uma aplicação Django em ambientes virtualizados ou containers pela primeira vez.
+A principal dificuldade foi no versionamento do código, esqueci de fazer os commits detalhados ao longo da atividade.
