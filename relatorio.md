@@ -44,7 +44,7 @@ Com o terminal do container ativo, as tarefas de desenvolvimento foram realizada
 * **Testes no Navegador:** * Acesso à home: `http://localhost:8000`
     * Acesso ao Admin: `http://localhost:8000/admin`
 
-> **![](imagens/admim.png)**
+> **![](imagens/admin.png)**
 
 > **![](imagens/home.png)**
 ---
